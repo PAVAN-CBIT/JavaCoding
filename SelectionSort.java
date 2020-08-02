@@ -19,27 +19,27 @@ public class SelectionSort
 		 int t;
      
      
-		 for(i=0;i<n-1;i++) // Outer for loop for fixing the each "i" element
-     {
-		     t=i; // Taking "i" index element as minimum element
-         
-		     for(j=i+1;j<n;j++) // Inner loop is running from "i+1" to n
-         {
-		         if(A[t]>A[j]) //comparision  for minimum element 
-             { 
-		           t=j; // Changing the index of minimum element
-		         }
-		     }
-         //swaping
-		      int t1 = A[t];
-		             A[t]=A[i];
-		             A[i]=t1;
-     }
+		for(i=0;i<n-1;i++) // Outer for loop for fixing the each "i" element
+		{
+			t=i; // Taking "i" index element as minimum element
+
+			for(j=i+1;j<n;j++) // Inner loop is running from "i+1" to n
+			{
+				if(A[t]>A[j]) //comparision  for minimum element 
+				{ 
+					t=j; // Changing the index of minimum element
+				}
+			}
+			//swaping
+			int t1 = A[t];
+			A[t]=A[i];
+			A[i]=t1;
+		}
      
-    //printing sorted elements
-    for(int k=0;k<n;k++)
-    {
-        System.out.println(A[k]);
-    }
+		//printing sorted elements
+		for(int k=0;k<n;k++)
+		{
+			System.out.println(A[k]);
+		}
 	}
 }
