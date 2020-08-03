@@ -8,24 +8,24 @@ Code, Compile, Run and Debug online from anywhere in world.
 *******************************************************************************/
 public class Reduce_Number
 {
-	public static void main(String[] args) {
-		System.out.println("Hello World");
-		
-		int n;
+	public static void main(String[] args)
+	{
 		int num =16;
-        n=num;
-        int c=0;
-        while(n>0){
-            if(n%2==0){
-                n=n/2;
-                c++;
-            }
-            else{
-                n=n-1;
-                c++;
-            }
-        }
-        
-        System.out.println(c);
-    }
+		int n=num;
+		int c=0;
+		while(n>0)
+		{
+			if(n%2==0) // If number is divisible with 2 then making half the element
+			{
+				n=n/2;
+				c++;
+			}
+			else // If number is not divisible then doing 1 minus
+			{
+				n=n-1;
+				c++;
+			}
+		}
+		System.out.println(c);
+	}
 }
